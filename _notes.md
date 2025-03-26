@@ -19,6 +19,11 @@
 - `hs watch my-website-theme my-website-theme`
   - This command watches for changes to the theme and automatically uploads them to your HubSpot account.
 
+## GitHub Actions
+
+- [HubSpot CMS Deploy Action](https://github.com/marketplace/actions/hubspot-cms-deploy)
+- Will automatically deploy my theme to my HubSpot "Developer Test Account" when I push to the `main` branch.
+
 ## Resources
 
 - [CMS Development Quick Start](https://developers.hubspot.com/docs/guides/cms/quickstart)
