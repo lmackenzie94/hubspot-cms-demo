@@ -1,4 +1,12 @@
 {
+  "name": "hubspot-cms-demo",
+  "version": "1.0.0",
+  "description": "HubSpot CMS Demo",
+  "scripts": {
+    "format:all": "prettier --write .",
+    "format:hubl": "prettier --write 'my-website-theme/**/*.html'"
+  },
+  "author": "",
   "devDependencies": {
     "@hubspot/prettier-plugin-hubl": "^0.2.5",
     "prettier": "^2.8.8"
