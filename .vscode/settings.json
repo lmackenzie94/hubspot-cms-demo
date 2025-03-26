@@ -2,5 +2,8 @@
   "files.associations": {
     "*.html": "html-hubl",
     "*.css": "css-hubl"
+  },
+  "emmet.includeLanguages": {
+    "html-hubl": "html"
   }
 }
