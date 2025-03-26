@@ -1,7 +1,8 @@
+name: Deploy to Development
 on:
   push:
     branches:
-      - main
+      - development
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -14,5 +15,5 @@ jobs:
         with:
           src_dir: my-website-theme
           dest_dir: my-website-theme
-          account_id: ${{ vars.hubspot_account_id || secrets.hubspot_portal_id }}
-          personal_access_key: ${{ secrets.hubspot_personal_access_key }}
+          account_id: ${{ vars.HUBSPOT_DEV_TEST_ACCOUNT_ID || secrets.HUBSPOT_DEV_TEST_PORTAL_ID }}
+          personal_access_key: ${{ secrets.HUBSPOT_DEV_TEST_PERSONAL_ACCESS_KEY }}

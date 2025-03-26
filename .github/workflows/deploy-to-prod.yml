@@ -1,0 +1,20 @@
+name: Deploy to Production
+on:
+  pull_request:
+    # types: [closed]
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: HubSpot Deploy Action
+        uses: HubSpot/hubspot-cms-deploy-action@v2.0
+        with:
+          src_dir: my-website-theme
+          dest_dir: my-website-theme
+          account_id: ${{ vars.HUBSPOT_STANDARD_ACCOUNT_ID || secrets.HUBSPOT_STANDARD_PORTAL_ID }}
+          personal_access_key: ${{ secrets.HUBSPOT_STANDARD_PERSONAL_ACCESS_KEY }}
