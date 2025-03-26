@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: HubSpot Deploy Action
-        uses: HubSpot/hubspot-cms-deploy-action@v2
+        uses: HubSpot/hubspot-cms-deploy-action@v2.0
         with:
           src_dir: my-website-theme
           dest_dir: my-website-theme
