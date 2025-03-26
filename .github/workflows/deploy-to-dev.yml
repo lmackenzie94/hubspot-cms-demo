@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - development
+    paths:
+      - my-website-theme/**
+      - .github/workflows/deploy-to-dev.yml
 jobs:
   deploy:
     runs-on: ubuntu-latest

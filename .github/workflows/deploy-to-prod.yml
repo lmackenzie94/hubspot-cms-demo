@@ -1,9 +1,11 @@
 name: Deploy to Production
 on:
-  pull_request:
-    # types: [closed]
+  push:
     branches:
       - main
+    paths:
+      - my-website-theme/**
+      - .github/workflows/deploy-to-prod.yml
 jobs:
   deploy:
     runs-on: ubuntu-latest
